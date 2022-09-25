@@ -1,11 +1,12 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    ".NETCoreApp,Version=v6.0": {},
+    ".NETCoreApp,Version=v6.0/win7-x86": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": []
+    ".NETCoreApp,Version=v6.0": []
   },
   "packageFolders": {
     "C:\\Users\\miyer\\.nuget\\packages\\": {}
@@ -13,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Minuta\\Minuta.App\\Minuta.App.csproj",
+      "projectUniqueName": "C:\\Users\\miyer\\Desktop\\MinutaGit\\Minuta\\Minuta.App\\Minuta.App.csproj",
       "projectName": "Minuta.App",
-      "projectPath": "C:\\Minuta\\Minuta.App\\Minuta.App.csproj",
+      "projectPath": "C:\\Users\\miyer\\Desktop\\MinutaGit\\Minuta\\Minuta.App\\Minuta.App.csproj",
       "packagesPath": "C:\\Users\\miyer\\.nuget\\packages\\",
-      "outputPath": "C:\\Minuta\\Minuta.App\\obj\\",
+      "outputPath": "C:\\Users\\miyer\\Desktop\\MinutaGit\\Minuta\\Minuta.App\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\miyer\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -30,7 +31,6 @@
       },
       "frameworks": {
         "net6.0": {
-          "targetAlias": "net6.0",
           "projectReferences": {}
         }
       },
@@ -42,27 +42,12 @@
     },
     "frameworks": {
       "net6.0": {
-        "targetAlias": "net6.0",
-        "imports": [
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48",
-          "net481"
-        ],
-        "assetTargetFallback": true,
-        "warn": true,
-        "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
-          "Microsoft.NETCore.App": {
-            "privateAssets": "all"
-          }
-        },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.423\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win7-x86": {
+        "#import": []
       }
     }
   }
