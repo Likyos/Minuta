@@ -1,0 +1,28 @@
+﻿@page
+@model Minuta.App.Pages.DetallesVisitorsModel
+@{
+}
+<h3>Detalles Visitor</h3>
+
+<div class="container">
+    <div>
+        Id: @Model.visitor.ID
+    </div>
+    <div>
+        Cedula: @Model.visitor.cedula
+    </div>
+    <div>
+        Nombre: @Model.visitor.nombre
+    </div>
+    <div>
+        Apellido: @Model.visitor.apellido
+    </div>
+    <div>
+        Telefono: @Model.visitor.telefono
+    </div>
+    <div>
+        Motivo de la visita: @Model.visitor.motivoVisita
+    </div>
+
+</div>
+<a asp-page="./ListaVisitors" Class="btn-default">Listar de Visitantes</a>

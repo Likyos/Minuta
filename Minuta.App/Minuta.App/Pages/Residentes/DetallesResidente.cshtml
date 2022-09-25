@@ -1,0 +1,39 @@
+﻿@page
+@model Minuta.App.Pages.DetallesResidenteModel
+@{
+}
+<h3>Detalles Residente</h3>
+
+<div class="container">
+<div>
+    Id: @Model.residente.ID
+</div>
+<div>
+    Cedula: @Model.residente.cedula
+</div>
+<div>
+    Nombre: @Model.residente.nombre
+</div>
+<div>
+    Apellido: @Model.residente.apellido
+</div>
+<div>
+    Telefono: @Model.residente.telefono
+</div>
+<div>
+    Usser: @Model.residente.idUsuario
+</div>
+<div>
+    Contraseña: @Model.residente.contrasena
+</div>
+<div>
+    Numero de apartamento: @Model.residente.numApartamento
+</div>
+<div>
+    Estado del Apartamento: @Model.residente.estadoApartamento
+</div>
+<div>
+    Estado del residente: @Model.residente.estadoResidente
+</div>
+</div>
+<a asp-page="./ListaResidente" Class="btn-default">Listar Residentes</a>

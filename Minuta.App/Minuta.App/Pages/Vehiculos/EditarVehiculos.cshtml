@@ -1,0 +1,23 @@
+﻿@page
+@model Minuta.App.Pages.EditarVehiculosModel
+@{
+}
+<h3>Agregar Vehiculos</h3>
+
+<div class="container" style="width:700px;">
+    <form method="post">
+        <div class="form-group">
+            <input type="hidden" asp-for ="vehiculo.vehiculoID"/>
+            <label asp-for="vehiculo.tipoVehiculo">Tipo de Vehiculo</label>
+            <input asp-for="vehiculo.tipoVehiculo" class="form-control">
+            <label asp-for="vehiculo.placaVehiculo">Placa del Vehiculo</label>
+            <input asp-for="vehiculo.placaVehiculo" class="form-control">
+            
+            <br>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-warning">Guardar</button>
+        </div>
+    </form>
+ </div>
+<a asp-page="./ListarVehiculos" class="btn-default">Lista de Vehiculos </a>

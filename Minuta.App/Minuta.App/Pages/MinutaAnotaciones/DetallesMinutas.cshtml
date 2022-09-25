@@ -1,0 +1,20 @@
+﻿@page
+@model Minuta.App.Pages.DetallesMinutasModel
+@{
+}
+
+<h3>Detalles de la Minuta</h3>
+
+<div class="container">
+    <div>
+        ID: @Model.minutaAnotacion.minutaAnotacionID
+    </div>
+    <div>
+        Fecha de Anotacion: @Model.minutaAnotacion.fechaAnotacion
+    </div>
+    <div>
+        Asunto: @Model.minutaAnotacion.asunto
+    </div>    
+</div>
+
+<a asp-page="./ListarMinutas" class="btn-default">Lista de Anotaciones</a>

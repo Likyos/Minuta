@@ -1,0 +1,29 @@
+﻿@page
+@model Minuta.App.Pages.EditarVisitorsModel
+@{
+}
+<h3>Agregar Visitantes</h3>
+
+<div class="container" style="width:700px;">
+    <form method="post">
+        <div class="form-group">
+            <input type="hidden" asp-for ="visitor.ID"/>
+            <label asp-for="visitor.cedula">Cedula</label>
+            <input asp-for="visitor.cedula" class="form-control">
+            <label asp-for="visitor.nombre">Nombres</label>
+            <input asp-for="visitor.nombre" class="form-control">
+            <label asp-for="visitor.apellido">Apellidos</label>
+            <input asp-for="visitor.apellido" class="form-control">
+            <label asp-for="visitor.telefono">Telefono</label>
+            <input asp-for="visitor.telefono" class="form-control">
+            <label asp-for="visitor.motivoVisita">Motivo de la Visita</label>
+            <input asp-for="visitor.motivoVisita" class="form-control">
+            
+            <br>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-warning">Guardar</button>
+        </div>
+    </form>
+ </div>
+<a asp-page="./ListaVisitors" class="btn-default">Lista de Visitantes </a>

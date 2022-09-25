@@ -1,0 +1,32 @@
+﻿@page
+@model Minuta.App.Pages.EditarResidenteModel
+@{
+}
+<h3>Agregar o editar Residentes</h3>
+
+<div class="container" style="width:700px;">
+    <form method="post">
+        <div class="form-group">
+            <input type="hidden" asp-for ="residente.ID"/>
+            <label asp-for="residente.cedula">Cedula</label>
+            <input asp-for="residente.cedula" class="form-control">
+            <label asp-for="residente.nombre">Nombres</label>
+            <input asp-for="residente.nombre" class="form-control">
+            <label asp-for="residente.apellido">Apellidos</label>
+            <input asp-for="residente.apellido" class="form-control">
+            <label asp-for="residente.telefono">Telefono</label>
+            <input asp-for="residente.telefono" class="form-control">
+            <label asp-for="residente.numApartamento">Numero de Apartamento</label>
+            <input asp-for="residente.numApartamento" class="form-control">
+            <label asp-for="residente.estadoApartamento">Estado del Apartamento</label>
+            <input asp-for="residente.estadoApartamento" class="form-control">
+            <label asp-for="residente.estadoResidente">Estado del Residente</label>
+            <input asp-for="residente.estadoResidente" class="form-control">
+            <br>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-warning">Guardar</button>
+        </div>
+    </form>
+ </div>
+<a asp-page="./ListaResidente" class="btn-default">Lista de Residentes </a>

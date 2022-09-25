@@ -1,0 +1,34 @@
+﻿@page
+@model Minuta.App.Pages.DetallesVigilantesModel
+@{
+}
+<h3>Detalles Vigilante</h3>
+
+<div class="container">
+    <div>
+        Id: @Model.vigilante.ID
+    </div>
+    <div>
+        Cedula: @Model.vigilante.cedula
+    </div>
+    <div>
+        Nombre: @Model.vigilante.nombre
+    </div>
+    <div>
+        Apellido: @Model.vigilante.apellido
+    </div>
+    <div>
+        Telefono: @Model.vigilante.telefono
+    </div>
+    <div>
+        Usser: @Model.vigilante.idUsuario
+    </div>
+    <div>
+        Contraseña: @Model.vigilante.contrasena
+    </div>
+    <div>
+        Numero de Placa: @Model.vigilante.placaVigilante
+    </div>
+
+</div>
+<a asp-page="./ListaVigilantes" Class="btn-default">Listar Vigilantes</a>

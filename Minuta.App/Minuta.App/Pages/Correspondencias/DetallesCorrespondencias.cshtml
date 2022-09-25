@@ -1,0 +1,23 @@
+﻿@page
+@model Minuta.App.Pages.DetallesCorrespondenciasModel
+@{
+}
+<h3>Detalles de la Correspondencia</h3>
+
+<div class="container">
+    <div>
+        ID: @Model.correspondencia.correspondenciaID
+    </div>
+    <div>
+        Tipo de Correspondencia: @Model.correspondencia.tipoCorrespondencia
+    </div>
+    <div>
+        Estado de Entrega: @Model.correspondencia.estadoEntrega
+    </div>
+    <div>
+        Remitente: @Model.correspondencia.remitente
+    </div>
+    
+</div>
+
+<a asp-page="./ListaCorrespondencias" class="btn-default">Lista de Correspondencias</a>

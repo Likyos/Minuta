@@ -1,0 +1,199 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Minuta\\Minuta.App\\Minuta.App.consola\\Minuta.App.consola.csproj": {}
+  },
+  "projects": {
+    "C:\\Minuta\\Minuta.App\\Minuta.App.consola\\Minuta.App.consola.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Minuta\\Minuta.App\\Minuta.App.consola\\Minuta.App.consola.csproj",
+        "projectName": "Minuta.App.consola",
+        "projectPath": "C:\\Minuta\\Minuta.App\\Minuta.App.consola\\Minuta.App.consola.csproj",
+        "packagesPath": "C:\\Users\\miyer\\.nuget\\packages\\",
+        "outputPath": "C:\\Minuta\\Minuta.App\\Minuta.App.consola\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\miyer\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Minuta\\Minuta.App\\Minuta.App.dominio\\Minuta.App.dominio.csproj": {
+                "projectPath": "C:\\Minuta\\Minuta.App\\Minuta.App.dominio\\Minuta.App.dominio.csproj"
+              },
+              "C:\\Minuta\\Minuta.App\\Minuta.App.persistencia\\Minuta.App.persistencia.csproj": {
+                "projectPath": "C:\\Minuta\\Minuta.App\\Minuta.App.persistencia\\Minuta.App.persistencia.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.423\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Minuta\\Minuta.App\\Minuta.App.dominio\\Minuta.App.dominio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Minuta\\Minuta.App\\Minuta.App.dominio\\Minuta.App.dominio.csproj",
+        "projectName": "Minuta.App.dominio",
+        "projectPath": "C:\\Minuta\\Minuta.App\\Minuta.App.dominio\\Minuta.App.dominio.csproj",
+        "packagesPath": "C:\\Users\\miyer\\.nuget\\packages\\",
+        "outputPath": "C:\\Minuta\\Minuta.App\\Minuta.App.dominio\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\miyer\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.423\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Minuta\\Minuta.App\\Minuta.App.persistencia\\Minuta.App.persistencia.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Minuta\\Minuta.App\\Minuta.App.persistencia\\Minuta.App.persistencia.csproj",
+        "projectName": "Minuta.App.persistencia",
+        "projectPath": "C:\\Minuta\\Minuta.App\\Minuta.App.persistencia\\Minuta.App.persistencia.csproj",
+        "packagesPath": "C:\\Users\\miyer\\.nuget\\packages\\",
+        "outputPath": "C:\\Minuta\\Minuta.App\\Minuta.App.persistencia\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\miyer\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "C:\\Minuta\\Minuta.App\\Minuta.App.dominio\\Minuta.App.dominio.csproj": {
+                "projectPath": "C:\\Minuta\\Minuta.App\\Minuta.App.dominio\\Minuta.App.dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.423\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

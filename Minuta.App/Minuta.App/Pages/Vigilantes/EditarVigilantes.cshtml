@@ -1,0 +1,28 @@
+﻿@page
+@model Minuta.App.Pages.EditarVigilantesModel
+@{
+}
+<h3>Agregar o editar Vigilante</h3>
+
+<div class="container" style="width:700px;">
+    <form method="post">
+        <div class="form-group">
+            <input type="hidden" asp-for ="vigilante.ID"/>
+            <label asp-for="vigilante.cedula">Cedula</label>
+            <input asp-for="vigilante.cedula" class="form-control">
+            <label asp-for="vigilante.nombre">Nombres</label>
+            <input asp-for="vigilante.nombre" class="form-control">
+            <label asp-for="vigilante.apellido">Apellidos</label>
+            <input asp-for="vigilante.apellido" class="form-control">
+            <label asp-for="vigilante.telefono">Telefono</label>
+            <input asp-for="vigilante.telefono" class="form-control">
+            <label asp-for="vigilante.placaVigilante">Numero de Placa del vigilante</label>
+            <input asp-for="vigilante.placaVigilante" class="form-control">
+            <br>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-warning">Guardar</button>
+        </div>
+    </form>
+ </div>
+<a asp-page="./ListaVigilantes" class="btn-default">Lista de Vigilantes </a>

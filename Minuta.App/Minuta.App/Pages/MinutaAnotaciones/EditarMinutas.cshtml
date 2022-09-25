@@ -1,0 +1,31 @@
+﻿@page
+@model Minuta.App.Pages.EditarMinutasModel
+@{
+}
+<h2>Agregar Anotaciones a la Minuta</h2>
+
+<div class="container" style="width:700px;">
+        <form method="post" >
+    <div class="form-group">
+        <input type="hidden" asp-for = "minutaAnotacion.minutaAnotacionID" />
+        
+        <label asp-for="minutaAnotacion.fechaAnotacion"></label>
+        <input asp-for="minutaAnotacion.fechaAnotacion" class="form-control">
+        <label asp-for="minutaAnotacion.asunto"></label>
+        <input asp-for="minutaAnotacion.asunto" class="form-control">
+        
+        <label for="vigilante">Vigilante</label>
+        <select ID="vigilante" asp-for="minutaAnotacion.vigilante.ID" name = "vigilanteId">
+            <option value="0">Seleccione un Vigilante</option>
+            @foreach (var vigilante in Model.listaVigilante)
+            {
+                <option value="@vigilante.ID">@vigilante.nombre @vigilante.apellido</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+
+</div>
+
+<a asp-page="./ListarMinutas" class="btn-default">Lista de Anotaciones </a>

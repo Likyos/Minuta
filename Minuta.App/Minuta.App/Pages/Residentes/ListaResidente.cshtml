@@ -1,0 +1,39 @@
+﻿@page
+@model Minuta.App.Pages.ListaResidenteModel
+@{
+}
+
+<h3>Listado de Residentes</h3>
+<div class="container">
+<table class="table table-warning table-striped table-hover table-borderless">
+    <thead>
+    	<tr>
+      		<th scope="col">ID</th>
+            <th scope="col">Cedula</th>
+      		<th scope="col">Nombres</th>
+      		<th scope="col">Apellidos</th>
+			<th scope="col">Detalles</th>
+			<th scope="col">Editar</th>
+    	</tr>
+  	</thead>
+    @foreach (var residente in Model.listaResidente)
+    {
+        <tbody class="table-group-divider table-striped table-hover">
+        <tr>
+            <td>@residente.ID</td>
+            <td>@residente.cedula</td>
+            <td>@residente.nombre</td>
+            <td>@residente.apellido</td>
+            <td>@residente.numApartamento</td>
+            <td>
+                <a asp-page="./DetallesResidente" asp-route-residenteId="@residente.ID" Class="bi-eye-fill h3 text-warning text-hover"></a>
+            </td>   
+            <td>
+                <a asp-page="./EditarResidente" asp-route-residenteId="@residente.ID"Class="bi-pencil-square h3 text-danger text-hover"></a>
+            </td>  
+        </tr>
+        </tbody>
+    }
+</table>
+</div>
+<a class = "btn btn-warning table-btn" asp-page="./EditarResidente" class="btn-default">Adicionar Residentes</a>

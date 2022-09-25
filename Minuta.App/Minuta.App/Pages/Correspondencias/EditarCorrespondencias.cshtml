@@ -1,0 +1,33 @@
+﻿@page
+@model Minuta.App.Pages.EditarCorrespondenciasModel
+@{
+}
+<h2>Agregar o editar Correspondnecias</h2>
+
+<div class="container" style="width:700px;">
+        <form method="post" >
+    <div class="form-group">
+        <input type="hidden" asp-for = "correspondencia.correspondenciaID" />
+        
+        <label asp-for="correspondencia.tipoCorrespondencia"></label>
+        <input asp-for="correspondencia.tipoCorrespondencia" class="form-control">
+        <label asp-for="correspondencia.remitente"></label>
+        <input asp-for="correspondencia.remitente" class="form-control">
+        <label asp-for="correspondencia.estadoEntrega"></label>
+        <input asp-for="correspondencia.estadoEntrega" class="form-control">
+        
+        <label for="residente">Residente</label>
+        <select ID="residente" asp-for="correspondencia.Residente.ID" name = "residenteId">
+            <option value="0">Seleccione un Residente</option>
+            @foreach (var residente in Model.listaResidente)
+            {
+                <option value="@residente.ID">@residente.nombre @residente.apellido</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+
+</div>
+
+<a asp-page="./ListaCorrespondencias" class="btn-default">Lista de Correspondencias </a>
